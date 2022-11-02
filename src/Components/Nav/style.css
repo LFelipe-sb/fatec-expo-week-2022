@@ -1,0 +1,79 @@
+.container-nav {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.625rem;
+  align-items: center;
+}
+
+.apoio {
+  display: flex;
+  font-weight: bold;
+  font-size: .7em;
+}
+
+.container-nav :is(.fatec-img) {
+  width: 150px;
+}
+
+.container-nav :is(.etec-embu) {
+  width: 120px;
+}
+
+.login {
+  color: #000;
+  border: 2px solid #000;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.login:hover {
+  color: #FFF;
+  background-color: #000;
+  transition: .3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {  
+  .container-nav :is(.fatec-img) {
+    width: 80px;
+  }
+  
+  .container-nav :is(.etec-embu) {
+    width: 90px;
+  }
+
+  .apoio {
+    flex-direction: column;
+    font-size: .5em;
+  }
+}
+
+@media screen and (max-width: 320px) {  
+  .container-nav {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+
+  }
+
+  .container-nav :is(.fatec-img), .container-nav :is(.etec-embu) {
+    width: 50%;
+  }
+
+  .apoio {
+    align-items: center;
+    margin: 15px auto 0 auto;
+    font-size: .6em;
+  }
+
+  .container-main {
+    padding: 15px;
+  }
+
+  .container-nav :is(.etec-embu) {
+    width: 110px;
+  }
+}

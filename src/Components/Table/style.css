@@ -1,0 +1,153 @@
+.table-wrapper::-webkit-scrollbar {
+    width: 12px; 
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+    background: rgb(84, 77, 63);
+    border-radius: 20px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background-color: rgb(154, 154, 195);
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.cointaner-table {
+    margin: 4em auto;
+    width: 80%;
+    padding: 10px;
+    background-color: #EEEEEE;
+    border-radius: 0.625rem;
+}
+
+.cointaner-table .title-table {
+    margin: .5em 0;
+    color: #000;
+}
+
+.cointaner-table .section-input-buscar {
+    margin: 8px;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-buscar{
+    height: 2em;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+    background-color: #D9D9D9;
+}
+
+.input-buscar:focus{
+outline: none;
+}
+
+.table {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #D9D9D9;
+    border-radius: 0.400rem;
+    font-size: 16px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.table-wrapper {
+    max-height: 500px;
+    min-width: 230px;
+    overflow: auto;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.table th, td {
+    padding: 5px 8px;
+    border: 1px solid #000;
+}
+
+.buttons-table {
+    margin: 1.5em 1.8em;
+    width: 30%;
+    padding: 0.8em;
+    border: none;
+    border-radius: 0.3125rem;
+    background: #000;
+    color: #fff;
+}
+
+.choose-table {
+    display: flex;
+    justify-content: center;
+}
+
+.choose-table button {
+    padding: 8px 20px;
+    margin: 5px;
+    border-bottom: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.choose-table button:hover {
+    background-color: #CCC;
+    color: #000;
+}
+  
+
+.cointaner-table h2 {
+    color: #000;
+}
+
+.btn-confirm-code {
+    background-color: #000;
+    color: #D9D9D9;
+    padding: 5px 10px;
+}
+
+.btn-confirm-code:hover {
+    background-color: #D9D9D9;
+    color: #000;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #333;
+    color: #CCC;
+}
+
+.btn-modal-confirm {
+    min-width: 100px;
+}
+
+@media screen and (max-width: 750px) {  
+    .choose-table button {
+        white-space: normal;
+        width: 28%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .choose-table {
+        flex-direction: column;
+    }
+
+    .choose-table button {
+        width: 90%;
+        margin: 8px auto;
+    }    
+}
+
+@media screen and (max-width: 420px) {  
+    .section-input-buscar {
+      flex-direction: column;
+    } 
+
+    .font-terms input {
+        width: 100%;
+        margin-left: -10px;
+    }
+}

@@ -1,0 +1,70 @@
+.container-form {
+    background: #D9D9D9;
+    width: 80%;
+    margin: 4rem auto 0 auto;
+    padding: 0.625rem;
+    border-radius: 0.625rem;
+}
+
+.container-form :is(form) {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.container-form :is(input) {
+    margin: 1.5rem 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 8px;
+}
+
+.container-form :is(input):focus-visible {
+    border: #faa;
+}
+
+.container-form :is(button) {
+    width: 30%;
+    padding: 10px;
+    margin: 1.25rem 1.25rem;
+    border: none;
+    border-radius: 0.3125rem;
+    background: #000;
+    color: #fff;
+}
+
+.use-term {
+    display: flex;
+    flex-direction: column;
+}
+
+.use-term .accept-terms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.use-term span {
+    padding: 0 8px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.use-term input {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 420px) {  
+    .container-form {
+        margin: 10px auto 30px auto;
+    }
+
+    .voltar {
+        display: flex;
+        justify-content: flex-start
+    }
+}

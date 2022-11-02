@@ -1,0 +1,40 @@
+.container-cadastro :is(.voltar) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 5% 5%;
+}
+
+.container-cadastro :is(img) {
+  width: 15%;
+}
+
+@media screen and (min-width: 768px) {
+  .container-cadastro :is(.voltar) {
+    margin: 3% 8%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container-cadastro :is(img) {
+    width: 5%;
+  }
+}
+
+@media screen and (max-width: 420px) {  
+  .container-button button{
+    min-width: 80px;
+    margin-bottom: 0;
+  }
+
+  .container-cadastro {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .container-cadastro :is(.voltar) {
+    margin: 3% 8%;
+    position: relative;
+    right: 70%;
+  }
+}

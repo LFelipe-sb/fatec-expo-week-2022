@@ -1,0 +1,54 @@
+.container-modal, .container-modal-confirmacao {
+    margin: auto;
+    margin-top: 2.5em;
+    padding: .5em 2em;
+    width: 55%;
+    overflow-y: scroll;
+    height: 85%;
+    border-radius: 0.4em;
+    box-shadow: 0 0 10px #000;
+    background-color: #D9D9D9;
+    text-align: justify;
+}
+
+.container-modal-confirmacao {
+    height: 65%;
+    text-align: center;
+}
+
+.container-modal-confirmacao div {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.container-modal-confirmacao input{
+    margin-top: 5px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.font-terms {
+    color: #000;
+}
+
+.first-title{
+    text-align: center;
+}
+
+.title-terms {
+    margin: 0;
+}
+
+.btn-modal{
+    width: 30%;
+    padding: 10px;
+    border: none;
+    border-radius: 0.3125rem;
+    background: #000;
+    color: #fff;
+}
+
+.btn-modal-confirm {
+    cursor: pointer;
+}

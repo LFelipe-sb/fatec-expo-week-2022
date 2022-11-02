@@ -1,0 +1,125 @@
+.container-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+}
+
+.container-main :is(.card) {
+  background: #fff;
+  color: black;
+  padding: 1.5rem;
+  margin: 1.25rem;
+  border-radius: 0.3125rem;
+  width: 25%;
+}
+
+.container-main :is(a) {
+  text-decoration: none;
+}
+
+.container-main p {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.title-thanks{
+  margin: -10px;
+  padding: 0;
+  color: #000;
+}
+
+.logos-modal {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.logos-modal img {
+  width: 100px;
+}
+
+.responsive-modal modal{
+  width: 20%;
+}
+
+.style-modal {
+  margin: auto;
+  margin-top: 2.5em;
+  padding: 1.5em 2em;
+  width: 45%;
+  overflow-y: scroll;
+  max-height: 80%;
+  border-radius: 10px;
+  border: 2px solid #000;
+  background-color: #FFF;
+  text-align: center;
+  top: 50px;
+  bottom: auto;
+}
+
+@media screen and (max-width: 1700px) {
+  .style-modal {
+    margin-top: 1em;
+    max-height: 90%;
+  }
+
+  .container-main :is(.card) {
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container-main {
+    padding: 25px;
+  }
+
+  .container-main :is(.card) {
+    padding: 2rem;
+  }
+
+  .style-modal {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .logos-modal img {
+    margin-bottom: 20px;
+  }
+
+  .style-modal {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.2em;
+    word-break: break-word;
+  }
+
+  .logos-modal {
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .style-modal {
+    width: 200px;
+    height: 70%;
+    margin-top: 7em;
+  }
+}
